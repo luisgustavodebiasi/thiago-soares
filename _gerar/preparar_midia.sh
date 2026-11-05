@@ -51,3 +51,8 @@ web "$X/miniaturas-youtube/yQYTJbeJ2N0.jpg" $A/img/videos/destaque-yQYTJbeJ2N0.j
 cp "$X"/audios/*.mp3 $A/audio/
 cp "$X"/impresso/pdfs/*.pdf $A/pdf/
 echo "mídia pronta"
+
+# cortes verticais (4:5) para o retrato do "Sobre" e para a capa no celular
+ffmpeg -v error -y -i "$O/RON_2708-aeroporto-original-do-sobre-mim.jpg" -vf "crop=2892:3615:1861:0,scale=1000:1250" -q:v 4 $A/img/fotos/retrato-vertical.jpg
+ffmpeg -v error -y -i "$O/RON_2579-stf-original-do-hero.jpg" -vf "crop=2891:3614:0:0,scale=1080:1350" -q:v 4 $A/img/fotos/hero-celular.jpg
+echo "cortes prontos"

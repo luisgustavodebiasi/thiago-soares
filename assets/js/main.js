@@ -39,6 +39,9 @@
   }
 
   /* ---------- aparecer ao rolar ---------- */
+  document.querySelectorAll("[data-escalonar]").forEach(function (g) {
+    Array.prototype.forEach.call(g.children, function (c, i) { c.style.setProperty("--atraso", (i % 6) * 90 + "ms"); });
+  });
   var revelar = document.querySelectorAll(".revela");
   if ("IntersectionObserver" in window) {
     var obs = new IntersectionObserver(function (entradas) {
@@ -182,6 +185,7 @@
     };
     var atualizarBotao = function () {
       var tocando = !audio.paused;
+      player.classList.toggle("ativo", tocando);
       botaoTocar.innerHTML = tocando ? ICONES.pausa : ICONES.play;
       botaoTocar.setAttribute("aria-label", tocando ? "Pausar" : "Tocar");
     };
