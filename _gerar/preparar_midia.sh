@@ -14,8 +14,8 @@ web(){ # origem destino largura qualidade  (nunca amplia)
 
 O="$X/fotos/originais-do-wix"
 F="$X/fotos"
-web "$O/RON_2579-stf-original-do-hero.jpg"            $A/img/fotos/hero-2400.jpg 2400 68
-web "$O/RON_2579-stf-original-do-hero.jpg"            $A/img/fotos/hero-1200.jpg 1200 72
+web "$O/hero-stf-editada-photoshop.png"              $A/img/fotos/hero-2400.jpg 2400 70
+web "$O/hero-stf-editada-photoshop.png"              $A/img/fotos/hero-1200.jpg 1200 74
 web "$O/RON_2643-planalto-original-da-galeria.jpg"    $A/img/fotos/planalto-2400.jpg 2400 66
 web "$O/RON_2643-planalto-original-da-galeria.jpg"    $A/img/fotos/planalto-1200.jpg 1200 70
 web "$O/RON_2708_edited-aeroporto-3000-sem-clarear.jpg" $A/img/fotos/aeroporto-2000.jpg 2000 66
@@ -29,7 +29,7 @@ for f in "$F"/trabalhos-0*.jpg; do
 done
 
 # imagem de compartilhamento (1200x630) a partir do hero
-ffmpeg -v error -y -i $A/img/fotos/hero-2400.jpg -vf "scale=1200:-2,crop=1200:630:0:(ih-630)*0.35" -q:v 4 $A/img/og.jpg
+ffmpeg -v error -y -i $A/img/fotos/hero-2400.jpg -vf "scale=1200:-2,crop=1200:630:0:(ih-630)*0.2" -q:v 4 $A/img/og.jpg
 
 # capas: tira as marcas de corte da gráfica (esq dir topo base, em fração da página)
 for f in "$X"/impresso/capas/*.jpg; do
@@ -54,5 +54,6 @@ echo "mídia pronta"
 
 # cortes verticais (4:5) para o retrato do "Sobre" e para a capa no celular
 ffmpeg -v error -y -i "$O/RON_2708-aeroporto-original-do-sobre-mim.jpg" -vf "crop=2892:3615:1861:0,scale=1000:1250" -q:v 4 $A/img/fotos/retrato-vertical.jpg
-ffmpeg -v error -y -i "$O/RON_2579-stf-original-do-hero.jpg" -vf "crop=2891:3614:0:0,scale=1080:1350" -q:v 4 $A/img/fotos/hero-celular.jpg
+# a capa usa a versão editada no Photoshop pelo Luis (05/11/2026): rosto mais centralizado
+ffmpeg -v error -y -i "$O/hero-stf-editada-photoshop.png" -vf "crop=1394:1743:0:0,scale=1080:1350" -q:v 3 $A/img/fotos/hero-celular.jpg
 echo "cortes prontos"

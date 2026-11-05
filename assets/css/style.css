@@ -190,7 +190,7 @@ main { padding-top: var(--topo); background: var(--marinho-900); }
   color: var(--branco); background: var(--marinho-950);
 }
 .hero picture, .hero picture img { position: absolute; inset: 0; width: 100%; height: 100%; }
-.hero picture img { object-fit: cover; object-position: 30% 35%; z-index: -2; animation: aproxima 16s var(--curva) both; }
+.hero picture img { object-fit: cover; object-position: 30% 22%; z-index: -2; animation: aproxima 16s var(--curva) both; }
 .hero::after {
   content: ""; position: absolute; inset: 0; z-index: -1;
   background:
@@ -215,7 +215,7 @@ main { padding-top: var(--topo); background: var(--marinho-900); }
 @keyframes desce { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
 @media (max-width: 900px) {
   .hero picture { bottom: auto; height: 64%; }
-  .hero picture img { height: 100%; object-position: 58% 72%; }
+  .hero picture img { height: 100%; object-position: 46% 25%; }
   .hero::after { background: linear-gradient(180deg, rgba(6, 26, 44, 0.55) 0%, rgba(6, 26, 44, 0) 16%, rgba(6, 26, 44, 0) 40%, var(--marinho-950) 64%); }
   .hero h1 { font-size: clamp(2.5rem, 12.6vw, 4.6rem); white-space: nowrap; }
   .hero h1 .quebra { display: none; }
