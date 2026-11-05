@@ -1,0 +1,474 @@
+{
+  "_fonte": "https://5z6zc9wr4q.wixsite.com/jornthiagosoares",
+  "_extraido_em": "2026-11-05",
+  "_obs": "Textos copiados exatamente como estão no site (inclusive '36 anos' e '© 2021', que podem estar desatualizados).",
+  "site": {
+    "titulo": "Thiago Soares Jornalista | brasília",
+    "nome": "Thiago Soares",
+    "assinatura": "•JORNALISTA•",
+    "rodape": {
+      "copyright": "© 2021 por Thiago Soares",
+      "aviso": "É proibido qualquer tipo de reprodução das imagens sem autorização.",
+      "aviso_2": "Imagens protegidas pela Lei do Direito Autoral nº 9.610/1998."
+    },
+    "menu": [
+      {
+        "rotulo": "Início - Jornalista Thiago Soares",
+        "slug": "/"
+      },
+      {
+        "rotulo": "Meus trabalhos",
+        "slug": "/meus-trabalhos",
+        "submenu": [
+          {
+            "rotulo": "Vídeo",
+            "slug": "/vídeo"
+          },
+          {
+            "rotulo": "Impresso",
+            "slug": "/impresso"
+          },
+          {
+            "rotulo": "Rádio",
+            "slug": "/rádio"
+          }
+        ]
+      },
+      {
+        "rotulo": "Currículo e contato",
+        "slug": "/currículo-e-contato"
+      }
+    ]
+  },
+  "contato": {
+    "telefone": "(61) 98270-8730",
+    "email": "th.soaresrocha@gmail.com",
+    "formulario": {
+      "campos": [
+        "Nome",
+        "Email",
+        "Telefone",
+        "Digite sua mensagem aqui..."
+      ],
+      "botao": "Enviar",
+      "mensagem_sucesso": "Obrigado pelo envio!"
+    }
+  },
+  "redes": {
+    "linkedin": "https://www.linkedin.com/in/thiago-soares-brasilia/",
+    "facebook": "https://www.facebook.com/tsoaresrocha",
+    "youtube": "https://www.youtube.com/channel/UCLXPtACKpT0Ekjcs_2wq9fQ",
+    "instagram": "https://www.instagram.com/tsoaresrocha/"
+  },
+  "inicio": {
+    "hero": {
+      "titulo": "thiago soares",
+      "subtitulo": "•JORNALISTA•",
+      "foto": "fotos/home-01-hero-stf.jpg",
+      "foto_original": "fotos/originais-do-wix/RON_2579-stf-original-do-hero.jpg"
+    },
+    "sobre": {
+      "titulo": "SOBRE MIM!",
+      "texto": "Jornalista, natural de Belo Horizonte (MG), 36 anos, residente em Brasília (DF) desde 2012. Tem experiência como editor de texto, produtor de TV, assessor de imprensa e repórter de impresso, TV e Rádio.",
+      "botao": {
+        "rotulo": "Ver currículo",
+        "link": "/currículo-e-contato"
+      },
+      "foto": "fotos/home-03-retrato-sobre-mim.jpg",
+      "fundo": "fotos/home-02-fundo-sobre-aeroporto.jpg",
+      "foto_original": "fotos/originais-do-wix/RON_2708-aeroporto-original-do-sobre-mim.jpg",
+      "fundo_sem_clarear": "fotos/originais-do-wix/RON_2708_edited-aeroporto-3000-sem-clarear.jpg"
+    },
+    "galeria": {
+      "titulo": "Galeria",
+      "fundo": "fotos/home-04-fundo-galeria-planalto.jpg",
+      "botoes": [
+        {
+          "rotulo": "vídeo",
+          "link": "/vídeo"
+        },
+        {
+          "rotulo": "impresso",
+          "link": "/impresso"
+        },
+        {
+          "rotulo": "rádio",
+          "link": "/rádio"
+        }
+      ],
+      "fundo_original": "fotos/originais-do-wix/RON_2643-planalto-original-da-galeria.jpg"
+    },
+    "fale_comigo": {
+      "titulo": "FALE COMIGO!",
+      "subtitulo": "CONTATO"
+    }
+  },
+  "meus_trabalhos": {
+    "galeria": [
+      "fotos/trabalhos-01-esplanada.jpg",
+      "fotos/trabalhos-02-congresso.jpg",
+      "fotos/trabalhos-03-catedral.jpg",
+      "fotos/trabalhos-04-oab.jpg",
+      "fotos/trabalhos-05-bastidor-gravacao.jpg",
+      "fotos/trabalhos-06-bastidor-luz.jpg",
+      "fotos/trabalhos-07-dragoes-planalto.jpg"
+    ],
+    "botoes": [
+      "vídeo",
+      "impresso",
+      "rádio"
+    ]
+  },
+  "video": {
+    "titulo": "vídeo",
+    "texto": "Nessa parte, é possível conferir alguns trabalhos desenvolvidos na área de vídeo. A experiência vai desde a produção de reportagens até a apresentação.",
+    "destaque": {
+      "youtube": "yQYTJbeJ2N0",
+      "titulo": "Compilado de reportagens - Jornalista Thiago Soares"
+    },
+    "grupos": [
+      {
+        "nome": "Trabalho Legal - MPT",
+        "videos": [
+          {
+            "youtube": "Pwjc3dVJGfY",
+            "titulo": "VT sobre o programa MPT na Escola - TRABALHO LEGAL MPT",
+            "duracao": "03:47"
+          },
+          {
+            "youtube": "qZyuVm9te0A",
+            "titulo": "VT sobre o Trabalho Escravo - TRABALHO LEGAL MPT",
+            "duracao": "05:33"
+          },
+          {
+            "youtube": "34nxdWxXbQg",
+            "titulo": "VT sobre Sindicatos - TRABALHO LEGAL MPT",
+            "duracao": "03:24"
+          },
+          {
+            "youtube": "ynaj4Flq4Pg",
+            "titulo": "VT sobre Registros Profissionais - TRABALHO LEGAL MPT",
+            "duracao": "03:56"
+          },
+          {
+            "youtube": "JPROB1XoIqs",
+            "titulo": "VT sobre a MP Coronavírus - TRABALHO LEGAL MPT",
+            "duracao": "03:43"
+          },
+          {
+            "youtube": "avo2_8Qhh2Q",
+            "titulo": "VT sobre a Pandemia - TRABALHO LEGAL MPT",
+            "duracao": "04:37"
+          }
+        ]
+      },
+      {
+        "nome": "OAB Nacional",
+        "videos": [
+          {
+            "youtube": "BlZ7PFT1hOA",
+            "titulo": "Entrevista com o Ministro Caputo - Programa OAB Entrevista",
+            "descricao": "Programa exibido em 25/02/2020",
+            "duracao": "07:54"
+          },
+          {
+            "youtube": "hNYq7_TsxFg",
+            "titulo": "Cabeça sobre a Semana Transito - Programa OAB Entrevista",
+            "descricao": "Programa Exibido em 16/10/2019",
+            "duracao": "00:20"
+          },
+          {
+            "youtube": "cEJMU0tIUoM",
+            "titulo": "Programa Especial - OAB ENTREVISTA",
+            "descricao": "Programa exibido em 11/08/2020",
+            "duracao": "26:08"
+          },
+          {
+            "youtube": "G0Y6uT1H3QU",
+            "titulo": "Programa OAB Entrevista",
+            "descricao": "Entrevista exibida em 03/03/2020",
+            "duracao": "26:41"
+          },
+          {
+            "youtube": "RoW8yDQF3CY",
+            "titulo": "Programa de nº 65 -  OAB Entrevista",
+            "descricao": "Programa exibido em 25/08/2020",
+            "duracao": "25:27"
+          },
+          {
+            "youtube": "aFpXXdBN-zs",
+            "titulo": "Programa OAB Entrevista",
+            "descricao": "Programa exibido em 25/02/2020",
+            "duracao": "10:08"
+          }
+        ]
+      },
+      {
+        "nome": "Produção TV Record",
+        "videos": [
+          {
+            "youtube": "ejNaCHqcdc8",
+            "titulo": "Produção para TV - RECORD TV | VT Vítima de racismo",
+            "duracao": "04:44"
+          },
+          {
+            "youtube": "RZaD0LYdMt0",
+            "titulo": "Produção para TV - RECORD TV | VT Atendimento para mulher",
+            "duracao": "06:04"
+          }
+        ]
+      }
+    ]
+  },
+  "impresso": {
+    "titulo": "impresso",
+    "texto": "No impresso, a experiência é com a produção de conteúdo jornalístico de diversos temas para revistas e jornais semanais e/ou diários.",
+    "_situacao": "No ar a página está em branco (o app 'PDF File Viewer' morreu). Os PDFs foram baixados pelo Luis no painel do Wix em 05/11/2026: 17 arquivos, que viraram 12 matérias depois de tirar as duplicadas. Todas assinadas por Thiago Soares. Títulos = manchete impressa.",
+    "materias": [
+      {
+        "titulo": "Fim das grades no Cruzeiro",
+        "veiculo": "Correio Braziliense",
+        "editoria": "Cidades",
+        "data": "2017-12-16",
+        "paginas": 1,
+        "pdf": "impresso/pdfs/2017-12-16-cb-fim-das-grades-no-cruzeiro.pdf",
+        "capa": "impresso/capas/2017-12-16-cb-fim-das-grades-no-cruzeiro.jpg"
+      },
+      {
+        "titulo": "Manifestações saem às ruas contra Temer",
+        "veiculo": "Correio Braziliense",
+        "editoria": "Brasil",
+        "data": "2017-05-19",
+        "paginas": 1,
+        "pdf": "impresso/pdfs/2017-05-19-cb-manifestacoes-nas-ruas-contra-temer.pdf",
+        "capa": "impresso/capas/2017-05-19-cb-manifestacoes-nas-ruas-contra-temer.jpg"
+      },
+      {
+        "titulo": "Gastos milionários com licença-prêmio",
+        "veiculo": "Correio Braziliense",
+        "editoria": "Cidades",
+        "data": "2017-03-10",
+        "paginas": 1,
+        "pdf": "impresso/pdfs/2017-03-10-cb-gastos-milionarios-com-licenca.pdf",
+        "capa": "impresso/capas/2017-03-10-cb-gastos-milionarios-com-licenca.jpg"
+      },
+      {
+        "titulo": "O cárcere à beira do colapso",
+        "veiculo": "Correio Braziliense",
+        "editoria": "Cidades",
+        "data": "2017-01-15",
+        "paginas": 1,
+        "obs": "Página dupla (26/27).",
+        "pdf": "impresso/pdfs/2017-01-15-cb-o-carcere-a-beira-do-colapso.pdf",
+        "capa": "impresso/capas/2017-01-15-cb-o-carcere-a-beira-do-colapso.jpg"
+      },
+      {
+        "titulo": "Manobra de distritais adia votação do Uber",
+        "veiculo": "Correio Braziliense",
+        "editoria": "Cidades",
+        "data": "2016-06-24",
+        "paginas": 1,
+        "pdf": "impresso/pdfs/2016-06-24-cb-manobra-de-distritais.pdf",
+        "capa": "impresso/capas/2016-06-24-cb-manobra-de-distritais.jpg"
+      },
+      {
+        "titulo": "Catadores gritam por ajuda",
+        "veiculo": "Correio Braziliense",
+        "editoria": "Cidades",
+        "data": "2016-04-01",
+        "paginas": 1,
+        "pdf": "impresso/pdfs/2016-04-01-cb-catadores-gritam-por-ajuda.pdf",
+        "capa": "impresso/capas/2016-04-01-cb-catadores-gritam-por-ajuda.jpg",
+        "capa_foco": "50% 78%"
+      },
+      {
+        "titulo": "Quando a infância é jogada no lixo",
+        "veiculo": "Correio Braziliense",
+        "editoria": "Cidades",
+        "data": "2016-03-24",
+        "paginas": 4,
+        "obs": "Série de reportagens: chamada de capa e 'Quando a infância é jogada no lixo' (24/03), 'Crianças seguem em perigo' (25/03) e 'Crianças persistem no Lixão' (31/03). A capa usa a página 2.",
+        "pdf": "impresso/pdfs/2016-03-24-cb-serie-infancia-no-lixao.pdf",
+        "capa": "impresso/capas/2016-03-24-cb-serie-infancia-no-lixao.jpg"
+      },
+      {
+        "titulo": "Esperança sobre patins",
+        "veiculo": "Correio Braziliense",
+        "editoria": "Cidades",
+        "data": "2015-12-21",
+        "paginas": 5,
+        "obs": "Série #PrazerEmAjudar.",
+        "pdf": "impresso/pdfs/2015-12-21-cb-serie-prazer-em-ajudar.pdf",
+        "capa": "impresso/capas/2015-12-21-cb-serie-prazer-em-ajudar.jpg"
+      },
+      {
+        "titulo": "Produtores preveem queda na safra do DF",
+        "veiculo": "Correio Braziliense",
+        "editoria": "Cidades",
+        "data": "2015-05-30",
+        "paginas": 1,
+        "pdf": "impresso/pdfs/2015-05-30-cb-produtores-preveem-queda-na-safra-do-df.pdf",
+        "capa": "impresso/capas/2015-05-30-cb-produtores-preveem-queda-na-safra-do-df.jpg"
+      },
+      {
+        "titulo": "Mais ciência, menos sofrimento",
+        "veiculo": "Revista Encontro",
+        "editoria": "Pet | Tratamento",
+        "data": "2015-03",
+        "paginas": 3,
+        "obs": "Arquivo completo. Os avulsos 'parte 2' e 'parte 3' estavam com os nomes trocados e ficaram fora.",
+        "pdf": "impresso/pdfs/2015-03-revista-encontro-mais-ciencia-menos-sofrimento.pdf",
+        "capa": "impresso/capas/2015-03-revista-encontro-mais-ciencia-menos-sofrimento.jpg"
+      },
+      {
+        "titulo": "Sem vistoria, tenda cai e deixa 10 feridos",
+        "veiculo": "Correio Braziliense",
+        "editoria": "Cidades",
+        "data": "2014-04-11",
+        "paginas": 1,
+        "pdf": "impresso/pdfs/2014-04-11-cb-sem-vistoria-tenda-cai-e-deixa-10-feridos.pdf",
+        "capa": "impresso/capas/2014-04-11-cb-sem-vistoria-tenda-cai-e-deixa-10-feridos.jpg"
+      },
+      {
+        "titulo": "Brasília, a capital dos correspondentes",
+        "veiculo": "Revista PQN - Pão de Queijo Notícias",
+        "editoria": "Capa",
+        "data": "2013",
+        "paginas": 5,
+        "obs": "Data tirada do arquivo (ago/2013); o PDF não traz a edição.",
+        "pdf": "impresso/pdfs/2013-revista-pqn-brasilia-capital-dos-correspondentes.pdf",
+        "capa": "impresso/capas/2013-revista-pqn-brasilia-capital-dos-correspondentes.jpg",
+        "capa_foco": "0% 0%"
+      }
+    ]
+  },
+  "radio": {
+    "titulo": "rádio",
+    "texto": "A seguir, alguns trabalhos na área de rádio. Alguns desenvolvidos no período de edição e apresentação de um jornal diário em uma emissora e outros trabalhos no formato podcast.",
+    "playlist": {
+      "nome": "Thiago Soares",
+      "descricao": "Exemplos de experiências na área de rádio, desde a edição até a apresentação de um jornal diário em uma emissora, além de trabalhos no formato podcast.",
+      "capa": "fotos/trabalhos-01-esplanada.jpg",
+      "faixas": [
+        {
+          "titulo": "Entrada Globo",
+          "autor": "Thiago Soares",
+          "duracao": "08:46",
+          "arquivo": "audios/01-entrada-globo.mp3"
+        },
+        {
+          "titulo": "OAB Cast (21 de agosto)",
+          "autor": "Thiago Soares",
+          "duracao": "07:59",
+          "arquivo": "audios/02-oab-cast-21-agosto.mp3"
+        },
+        {
+          "titulo": "OAB Cast (14 de agosto)",
+          "autor": "Thiago Soares",
+          "duracao": "10:01",
+          "arquivo": "audios/03-oab-cast-14-agosto.mp3"
+        }
+      ]
+    }
+  },
+  "curriculo": {
+    "titulo": "CURRÍCULO",
+    "nome": "THIAGO SOARES",
+    "assinatura": "•JORNALISTA•",
+    "abertura": "Jornalista, natural de Belo Horizonte (MG), tem 36 anos e reside em Brasília (DF) desde 2012. Formou-se pela Pontifícia Universidade Católica de Minas Gerais (PUC-Minas) em 2010.",
+    "paragrafos": [
+      "Foi estagiário da Revista Viver Brasil, distribuída em Minas Gerais. Após a graduação, atuou como jornalista de campanha eleitoral ao governo do Estado de Minas Gerais. Logo depois, mudou-se para Unaí, município que fica no noroeste mineiro, onde foi responsável por levar ao ar diariamente o noticiário local da Rádio 98 FM. Também foi correspondente da Rádio Globo, afiliada na cidade.",
+      "Em 2012, chegou a Brasília para trabalhar na Vincere Associados como editor do jornal Tribuna Rural e como repórter da revista Gestão Cooperativa e do Canal Cooperativo (web). Pela mesma empresa, ainda atuou como assessor de imprensa. Em 2013, entrou para o time do Correio Braziliense, no caderno de Cidades, onde permaneceu por quatro anos cobrindo assuntos locais relacionados às áreas de segurança pública, política, economia e comportamento. Foi colunista e repórter da Revista Pão de Queijo Notícias por sete anos.",
+      "Possui experiência como produtor de jornalismo e editor de texto na RecordTV Brasília. Também foi repórter do programa Trabalho Legal do Ministério Público do Trabalho (MPT) e apresentador substituto do programa OAB Nacional do Conselho Nacional da Ordem dos Advogados do Brasil, ambos veiculados na web e na TV Justiça. Atuou como assessor de imprensa no Ministério da Justiça e Segurança Pública pela empresa Santafé Ideias. Atualmente, desempenha a função de assessor de imprensa da Agência Nacional de Transportes Terrestres (ANTT)."
+    ],
+    "experiencia_titulo": "Experiência Profissional",
+    "experiencias": [
+      {
+        "cargo": "Assessor de imprensa",
+        "empresa": "Governo Federal",
+        "periodo": "Fevereiro de 2023 até o momento",
+        "descricao": "Assessor de imprensa na Agência Nacional de Transportes Terrestres (ANTT). Atua no suporte direto aos veículos de comunicação."
+      },
+      {
+        "cargo": "Analista de Comunicação",
+        "empresa": "Santafé Ideias",
+        "periodo": "Fevereiro de 2022 até janeiro de 2023",
+        "descricao": "Assessor de imprensa no Ministério da Justiça e Segurança Pública. Atua no desenvolvimento de ações de comunicação, elaboração de conteúdos e atendimento à imprensa."
+      },
+      {
+        "cargo": "Editor de Texto",
+        "empresa": "RecordTV Brasília",
+        "periodo": "Fevereiro de 2018 até Fevereiro de 2022",
+        "descricao": "Editor de texto dos jornais locais da emissora. Começou como produtor do jornal local DF no AR com cobertura nas áreas de economia, segurança pública, política e comportamento."
+      },
+      {
+        "cargo": "Repórter e Apresentador",
+        "empresa": "Ordem dos Advogados do Brasil (OAB) - E3 Comunicação (DF)",
+        "periodo": "Abril de 2019 até janeiro de 2021",
+        "descricao": "Apresentador substituto e repórter freelancer do programa OAB Nacional do Conselho Federal da Ordem dos Advogados do Brasil, exibido na TV Justiça e na web. Apresentador substituto do podcast OAB Nacional, com cobertura de ações desenvolvidas pelo órgão."
+      },
+      {
+        "cargo": "Repórter",
+        "empresa": "Ministério Público do Trabalho (MPT) - Grupo Exemplus (DF)",
+        "periodo": "Dezembro de 2019 até fevereiro de 2022",
+        "descricao": "Repórter freelancer do programa Trabalho Legal do Ministério Público do Trabalho (MPT), exibido na TV Justiça e web. Cobertura de assuntos relacionados às ações desenvolvidas pelo órgão."
+      },
+      {
+        "cargo": "Colunista e repórter",
+        "empresa": "Revista PQN - Pão de Queijo Notícias (BH)",
+        "periodo": "Fevereiro de 2014 até Agosto de 2021",
+        "descricao": "Colunista de Brasília e produção de reportagens de temas ligados à comunicação social"
+      },
+      {
+        "cargo": "Repórter",
+        "empresa": "Correio Braziliense (DF)",
+        "periodo": "Setembro de 2013 a fevereiro de 2018",
+        "descricao": "Repórter da editoria de Cidades com atuação no impresso e portal web, com cobertura local nas áreas de segurança pública, política, economia e comportamento."
+      },
+      {
+        "cargo": "Editor, repórter, âncora e assessor de imprensa",
+        "empresa": "Vincere Associados (DF)",
+        "periodo": "Setembro de 2012 a setembro de 2013",
+        "descricao": "Editor do jornal Tribuna Rural; Repórter da revista Gestão Cooperativa; Âncora e Repórter do Canal Cooperativo (web); Assessor de Imprensa da Agrobrasília - Feira de Agronegócios."
+      },
+      {
+        "cargo": "Repórter e apresentador",
+        "empresa": "Sistema de Radiodifusão Veredas de Unaí (MG)",
+        "periodo": "Maio de 2011 a agosto de 2012",
+        "descricao": "Produção, edição, reportagem e apresentação do noticiário local diário da emissora 98 FM; Repórter Especial do programa Manhã Globo (local) da retransmissora da Rádio Globo em Unaí (MG); Correspondente na cidade de Unaí (MG) do programa Globo Estrada em rede nacional pela Rádio Globo."
+      },
+      {
+        "cargo": "Assessor de imprensa",
+        "empresa": "Pesquisa DOC (BH)",
+        "periodo": "Agosto de 2010 a outubro de 2010",
+        "descricao": "Atuação como assessor de imprensa freelancer na Campanha Política de Minas Gerais, em 2010. Atualização do site com a cobertura da campanha eleitoral de Antonio Anastasia, para o Governo de Minas, Aécio Neves e Itamar Franco, para o Senado Federal. Desenvolvimento de Ações de SEO (Search Engine Optimization)."
+      },
+      {
+        "cargo": "Estagiário de redação",
+        "empresa": "Revista Viver Brasil (BH)",
+        "periodo": "Dezembro de 2009 a agosto de 2010",
+        "descricao": "Atualização do site da revista Viver Brasil com matérias, notas, fotos e vídeos; Atualização e manutenção das redes sociais; Auxílio na produção das reportagens da revista Viver Brasil e jornal Correio Semanal, ambos com circulação em Minas Gerais."
+      }
+    ]
+  },
+  "identidade_visual": {
+    "_obs": "Cores medidas nas capturas de tela; fontes lidas do CSS do Wix.",
+    "fontes": {
+      "titulos": "Lulo Clean One Bold (Wix), caixa alta com espaçamento largo",
+      "texto": "Avenir LT 35 Light",
+      "apoio": "DIN Next Light"
+    },
+    "cores": {
+      "azul_paginas_internas": "#326b9a",
+      "azul_fale_comigo_e_meus_trabalhos": "#4682b6",
+      "painel_carrosseis_video": "#6eb7c2",
+      "botao_video_inicio": "#72ace0",
+      "botao_impresso_inicio": "#336793",
+      "botao_radio_inicio": "#0e3352",
+      "botao_video_trabalhos": "#73c0cc",
+      "botao_impresso_trabalhos": "#44b9c2",
+      "botao_radio_trabalhos": "#368e98",
+      "destaque_menu_ativo": "#38dcc8"
+    }
+  }
+}
