@@ -27,7 +27,6 @@
 
   --serif: "Newsreader", "Iowan Old Style", "Georgia", serif;
   --sans: "Manrope", "Avenir Next", "Segoe UI", system-ui, sans-serif;
-  --marca: "Syncopate", "Manrope", sans-serif;
 
   --largura: 1240px;
   --gutter: clamp(18px, 4.5vw, 56px);
@@ -128,8 +127,9 @@ main { padding-top: var(--topo); background: var(--marinho-900); }
 .inicio main { padding-top: 0; }
 
 .logo { display: flex; flex-direction: column; gap: 6px; text-decoration: none; line-height: 1; }
-.logo strong { font-family: var(--marca); font-weight: 700; font-size: 0.92rem; letter-spacing: 0.24em; }
-.logo span { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.52em; text-transform: uppercase; color: var(--agua-300); }
+.logo strong { font-family: var(--serif); font-weight: 400; font-size: 1.5rem; letter-spacing: -0.01em; line-height: 0.95; font-variation-settings: "opsz" 48; }
+.logo strong em { font-style: italic; font-weight: 300; color: var(--agua-300); }
+.logo span { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.42em; text-transform: uppercase; color: rgba(255, 255, 255, 0.6); }
 
 .menu { display: flex; align-items: center; gap: clamp(20px, 3vw, 44px); }
 .menu > ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: clamp(18px, 2.6vw, 36px); }
@@ -217,7 +217,8 @@ main { padding-top: var(--topo); background: var(--marinho-900); }
   .hero picture { bottom: auto; height: 64%; }
   .hero picture img { height: 100%; object-position: 58% 72%; }
   .hero::after { background: linear-gradient(180deg, rgba(6, 26, 44, 0.55) 0%, rgba(6, 26, 44, 0) 16%, rgba(6, 26, 44, 0) 40%, var(--marinho-950) 64%); }
-  .hero h1 { font-size: clamp(3.4rem, 16vw, 5.6rem); }
+  .hero h1 { font-size: clamp(2.5rem, 12.6vw, 4.6rem); white-space: nowrap; }
+  .hero h1 .quebra { display: none; }
   .hero-sub { margin: 20px 0 28px; }
   .hero .container { grid-template-columns: 1fr; }
   .hero-texto { grid-column: 1; }
@@ -255,12 +256,14 @@ main { padding-top: var(--topo); background: var(--marinho-900); }
 .passagens { border-block: 1px solid var(--filete); background: var(--papel-2); overflow: hidden; }
 .passagens .container { display: flex; align-items: center; gap: 28px; padding-block: 26px; }
 .passagens h2 { flex: none; font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: var(--tinta-suave); }
-.passagens ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 0; }
-.passagens li { font-family: var(--serif); font-size: clamp(1.05rem, 1.6vw, 1.3rem); color: var(--marinho-900); }
-.passagens li + li::before { content: "·"; margin: 0 16px; color: var(--agua-500); }
-@media (max-width: 760px) {
+.passagens ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; gap: 0; min-width: 0; }
+.passagens li { flex: none; white-space: nowrap; font-family: var(--serif); font-size: clamp(0.98rem, 1.22vw, 1.2rem); color: var(--marinho-900); }
+.passagens li + li::before { content: "·"; margin: 0 clamp(10px, 1.1vw, 16px); color: var(--agua-500); }
+@media (max-width: 1100px) {
   .passagens .container { flex-direction: column; align-items: flex-start; gap: 12px; }
-  .passagens ul { gap: 4px 20px; }
+}
+@media (max-width: 900px) {
+  .passagens ul { flex-wrap: wrap; gap: 4px 20px; }
   .passagens li + li::before { display: none; }
 }
 
@@ -336,34 +339,30 @@ main { padding-top: var(--topo); background: var(--marinho-900); }
 .contato-grade { position: relative; display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr); gap: clamp(48px, 7vw, 110px); }
 .contato .titulo { margin: 18px 0 24px; }
 .contato .texto-contato { color: rgba(255, 255, 255, 0.78); max-width: 38ch; }
-.canais { list-style: none; margin: 36px 0 30px; padding: 0; border-top: 1px solid var(--filete-claro); }
-.canais li { border-bottom: 1px solid var(--filete-claro); }
-.canais a { display: grid; grid-template-columns: 24px minmax(0, 1fr) auto; align-items: center; gap: 16px; padding: 18px 0; text-decoration: none; overflow-wrap: anywhere; transition: padding var(--t), color var(--t); }
-.canais a:hover { padding-left: 8px; color: var(--agua-300); }
-.canais svg { width: 20px; height: 20px; }
-.canais small { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255, 255, 255, 0.55); }
-.contato .redes { gap: 10px; }
-.contato .redes a { width: 44px; height: 44px; border: 1px solid var(--filete-claro); }
-
-.formulario { display: grid; gap: 8px; align-content: start; padding: clamp(26px, 3.6vw, 44px); border-radius: var(--raio); background: rgba(6, 26, 44, 0.32); border: 1px solid var(--filete-claro); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
-.formulario h3 { font-family: var(--serif); font-weight: 400; font-size: 1.6rem; margin-bottom: 4px; }
-.campo { position: relative; display: block; }
-.campo input, .campo textarea {
-  width: 100%; border: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.3); border-radius: 0; background: transparent;
-  color: var(--branco); font: inherit; font-size: 1.02rem; padding: 26px 0 10px; transition: border-color var(--t);
+.contato .redes { gap: 10px; margin-top: 34px; }
+.contato .redes a { width: 46px; height: 46px; border: 1px solid var(--filete-claro); }
+.contato-grade { align-items: center; }
+.contato-opcoes { display: grid; gap: 16px; }
+.opcao {
+  display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 20px;
+  padding: clamp(22px, 3vw, 32px); border-radius: var(--raio); text-decoration: none;
+  border: 1px solid var(--filete-claro); background: rgba(6, 26, 44, 0.28);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  transition: transform var(--t), background var(--t), border-color var(--t), color var(--t);
 }
-.campo textarea { min-height: 130px; resize: vertical; display: block; }
-.campo span { position: absolute; left: 0; top: 24px; color: rgba(255, 255, 255, 0.62); pointer-events: none; transition: transform var(--t), color var(--t); transform-origin: left top; }
-.campo input::placeholder, .campo textarea::placeholder { color: transparent; }
-.campo input:focus, .campo textarea:focus { outline: none; border-color: var(--destaque); }
-.campo input:focus + span, .campo input:not(:placeholder-shown) + span,
-.campo textarea:focus + span, .campo textarea:not(:placeholder-shown) + span { transform: translateY(-20px) scale(0.78); color: var(--agua-300); }
-.formulario .rodape-form { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; margin-top: 22px; }
-.formulario .status { margin: 0; font-size: 0.9rem; font-weight: 600; color: var(--agua-300); min-height: 1.4em; flex: 1 1 200px; }
-@media (max-width: 900px) {
-  .contato-grade { grid-template-columns: 1fr; }
-  .formulario .botao { width: 100%; }
-}
+.opcao:hover { transform: translateY(-3px); background: rgba(6, 26, 44, 0.45); border-color: rgba(255, 255, 255, 0.32); }
+.opcao-icone { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; border: 1px solid var(--filete-claro); }
+.opcao-icone svg { width: 24px; height: 24px; }
+.opcao-texto small { display: block; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(255, 255, 255, 0.6); }
+.opcao-texto strong { display: block; margin-top: 4px; font-family: var(--serif); font-weight: 400; font-size: clamp(1.45rem, 2.6vw, 2rem); line-height: 1.15; overflow-wrap: anywhere; }
+.opcao-seta svg { width: 22px; height: 22px; transition: transform var(--t); }
+.opcao:hover .opcao-seta svg { transform: translate(3px, -3px); }
+.opcao.destaque { background: var(--branco); border-color: var(--branco); color: var(--marinho-900); }
+.opcao.destaque:hover { background: var(--destaque); border-color: var(--destaque); }
+.opcao.destaque .opcao-icone { border-color: var(--filete); background: var(--papel); }
+.opcao.destaque .opcao-texto small { color: var(--agua-700); }
+@media (max-width: 900px) { .contato-grade { grid-template-columns: 1fr; } }
+@media (max-width: 420px) { .opcao { gap: 14px; } .opcao-icone { width: 46px; height: 46px; } }
 
 /* ---------- rodapé ---------- */
 .rodape { background: var(--marinho-950); color: rgba(255, 255, 255, 0.72); padding: clamp(56px, 7vw, 88px) 0 32px; }

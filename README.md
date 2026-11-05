@@ -7,7 +7,7 @@ Site estático (HTML, CSS e JS puros) feito para o GitHub Pages. Recria o antigo
 
 | Arquivo | Conteúdo |
 |---|---|
-| `index.html` | Capa, Sobre mim, atalhos para Vídeo/Impresso/Rádio e Fale comigo |
+| `index.html` | Capa, Sobre mim, Passagens, cartões de Vídeo/Impresso/Rádio, vídeo em destaque e Fale comigo |
 | `trabalhos.html` | Galeria de fotos (amplia ao clicar) e os três atalhos |
 | `video.html` | Vídeo em destaque e 14 vídeos em três grupos (abrem numa janela, sem sair do site) |
 | `impresso.html` | 12 matérias em PDF, com filtro por veículo |
@@ -37,14 +37,10 @@ Para ver no computador: `python3 -m http.server 8000` e depois abrir http://loca
 
 A pasta `_gerar` não é publicada, porque o GitHub Pages ignora pastas que começam com `_`.
 
-## Formulário de contato
+## Contato
 
-Sem configuração, o botão Enviar abre o aplicativo de e-mail do visitante com a mensagem pronta para th.soaresrocha@gmail.com.
-Para receber as mensagens direto, sem depender do aplicativo de e-mail:
-
-1. Crie um formulário grátis no Formspree (formspree.io) com o e-mail do Thiago.
-2. Copie o endereço que o Formspree gera (`https://formspree.io/f/xxxxxxx`).
-3. Em `_gerar/gerar.py`, preencha `data-endpoint=""` com esse endereço e rode o gerador.
+O site não tem formulário: o contato é pelo WhatsApp e pelo telefone, que vêm de `contato.telefone` no `dados.json`.
+O botão de WhatsApp abre uma conversa com esse mesmo número (wa.me).
 
 ## Para confirmar com o Thiago
 

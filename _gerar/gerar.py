@@ -100,7 +100,7 @@ def rodape_html():
         <p>Jornalista em Brasília. TV, impresso, rádio e assessoria de imprensa.</p>
       </div>
       <div><h2>Navegação</h2><ul>{nav}</ul></div>
-      <div><h2>Contato</h2><ul><li><a href="mailto:{e(C["email"])}">E-mail</a></li><li><a href="https://wa.me/{TEL_DIGITOS}" target="_blank" rel="noopener">WhatsApp</a></li>{redes}</ul></div>
+      <div><h2>Contato</h2><ul><li><a href="https://wa.me/{TEL_DIGITOS}" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="tel:+{TEL_DIGITOS}">{e(C["telefone"])}</a></li>{redes}</ul></div>
     </div>
     <div class="rodape-base">
       <p>© {ANO} Thiago Soares</p>
@@ -133,14 +133,14 @@ def pagina(arquivo, titulo, descricao, corpo, extra_head="", classe=""):
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Syncopate:wght@700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 {extra_head}</head>
 <body class="{classe}">
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 <header class="topo">
   <div class="container">
-    <a class="logo" href="index.html" aria-label="Thiago Soares, página inicial"><strong>THIAGO SOARES</strong><span>Jornalista</span></a>
+    <a class="logo" href="index.html" aria-label="Thiago Soares, página inicial"><strong>Thiago <em>Soares</em></strong><span>Jornalista</span></a>
     <button class="botao-menu" type="button" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">{I["menu"]}{I["x"]}</button>
     <nav id="menu" class="menu" aria-label="Principal">
       <ul>{menu_html(arquivo)}</ul>
@@ -206,31 +206,26 @@ def areas_html():
 
 
 def contato_html():
-    f = C["formulario"]
     return f"""<section class="secao contato" id="contato">
   <div class="container contato-grade">
     <div class="revela">
       <span class="rotulo">Contato</span>
       <h2 class="titulo">Fale <em>comigo.</em></h2>
-      <p class="texto-contato">Para trabalhos, pautas e parcerias, escolha o canal que preferir.</p>
-      <ul class="canais">
-        <li><a href="tel:+{TEL_DIGITOS}">{I["telefone"]}<span>{e(C["telefone"])}</span><small>Telefone</small></a></li>
-        <li><a href="https://wa.me/{TEL_DIGITOS}" target="_blank" rel="noopener">{I["whatsapp"]}<span>Mandar mensagem</span><small>WhatsApp</small></a></li>
-        <li><a href="mailto:{e(C["email"])}">{I["email"]}<span>{e(C["email"])}</span><small>E-mail</small></a></li>
-      </ul>
+      <p class="texto-contato">Para trabalhos, pautas e parcerias, chame no WhatsApp ou ligue.</p>
       {redes_html()}
     </div>
-    <form class="formulario revela" data-contato data-para="{e(C["email"])}" data-endpoint="" novalidate>
-      <h3>Mande uma mensagem</h3>
-      <label class="campo"><input name="nome" type="text" placeholder=" " autocomplete="name" required><span>{e(f["campos"][0])}</span></label>
-      <label class="campo"><input name="email" type="email" placeholder=" " autocomplete="email" required><span>E-mail</span></label>
-      <label class="campo"><input name="telefone" type="tel" placeholder=" " autocomplete="tel"><span>{e(f["campos"][2])} (opcional)</span></label>
-      <label class="campo"><textarea name="mensagem" placeholder=" " required></textarea><span>Mensagem</span></label>
-      <div class="rodape-form">
-        <p class="status" role="status" aria-live="polite"></p>
-        <button class="botao claro" type="submit">{e(f["botao"])} {I["seta"]}</button>
-      </div>
-    </form>
+    <div class="contato-opcoes revela">
+      <a class="opcao destaque" href="https://wa.me/{TEL_DIGITOS}" target="_blank" rel="noopener">
+        <span class="opcao-icone">{I["whatsapp"]}</span>
+        <span class="opcao-texto"><small>WhatsApp</small><strong>Mandar mensagem</strong></span>
+        <span class="opcao-seta">{I["seta_diag"]}</span>
+      </a>
+      <a class="opcao" href="tel:+{TEL_DIGITOS}">
+        <span class="opcao-icone">{I["telefone"]}</span>
+        <span class="opcao-texto"><small>Telefone</small><strong>{e(C["telefone"])}</strong></span>
+        <span class="opcao-seta">{I["seta_diag"]}</span>
+      </a>
+    </div>
   </div>
 </section>"""
 
@@ -243,7 +238,7 @@ def gerar_inicio():
                  "Ministério da Justiça", "ANTT"]
     pessoa = {
         "@context": "https://schema.org", "@type": "Person", "name": "Thiago Soares",
-        "jobTitle": "Jornalista", "url": BASE, "email": "mailto:" + C["email"], "telephone": "+" + TEL_DIGITOS,
+        "jobTitle": "Jornalista", "url": BASE, "telephone": "+" + TEL_DIGITOS,
         "image": BASE + "assets/img/fotos/retrato-vertical.jpg",
         "address": {"@type": "PostalAddress", "addressLocality": "Brasília", "addressRegion": "DF", "addressCountry": "BR"},
         "alumniOf": "Pontifícia Universidade Católica de Minas Gerais (PUC-Minas)",
@@ -262,7 +257,7 @@ def gerar_inicio():
   <div class="container">
     <div class="hero-texto">
       <span class="rotulo">Jornalista · Brasília</span>
-      <h1>Thiago<br><em>Soares</em></h1>
+      <h1>Thiago <br class="quebra"><em>Soares</em></h1>
       <p class="hero-sub">Reportagem, apresentação e texto para TV, jornal, revista e rádio. Hoje, assessor de imprensa da ANTT.</p>
       <div class="hero-acoes">
         <a class="botao claro" href="trabalhos.html">Ver trabalhos {I["seta"]}</a>

@@ -227,34 +227,4 @@
     atualizarBotao();
   }
 
-  /* ---------- formulário de contato ---------- */
-  document.querySelectorAll("form[data-contato]").forEach(function (form) {
-    var status = form.querySelector(".status");
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      if (!form.reportValidity()) return;
-      var d = new FormData(form);
-      var endpoint = form.getAttribute("data-endpoint");
-      if (endpoint) {
-        /* com um serviço de formulário configurado (ex.: Formspree), envia direto */
-        status.textContent = "Enviando...";
-        fetch(endpoint, { method: "POST", body: d, headers: { Accept: "application/json" } })
-          .then(function (r) {
-            if (!r.ok) throw new Error();
-            form.reset();
-            status.textContent = "Obrigado pelo envio!";
-          })
-          .catch(function () { status.textContent = "Não foi possível enviar agora. Tente pelo e-mail ou WhatsApp."; });
-        return;
-      }
-      /* sem serviço configurado: abre o e-mail do visitante com a mensagem pronta */
-      var corpo = (d.get("mensagem") || "") + "\n\n" + (d.get("nome") || "") +
-        (d.get("telefone") ? "\nTelefone: " + d.get("telefone") : "") +
-        (d.get("email") ? "\nE-mail: " + d.get("email") : "");
-      var assunto = "Contato pelo site" + (d.get("nome") ? " | " + d.get("nome") : "");
-      window.location.href = "mailto:" + form.getAttribute("data-para") +
-        "?subject=" + encodeURIComponent(assunto) + "&body=" + encodeURIComponent(corpo);
-      status.textContent = "Abrimos seu aplicativo de e-mail com a mensagem pronta.";
-    });
-  });
 })();
