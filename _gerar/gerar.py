@@ -50,6 +50,14 @@ TEL_DIGITOS = "55" + "".join(ch for ch in C["telefone"] if ch.isdigit())
 REDES = [("LinkedIn", R["linkedin"], "linkedin"), ("Instagram", R["instagram"], "instagram"),
          ("YouTube", R["youtube"], "youtube"), ("Facebook", R["facebook"], "facebook")]
 
+NASC = D["site"]["nascimento"]
+
+
+def com_idade(texto):
+    """Escapa o texto e troca {idade} por um número que o JS mantém atualizado."""
+    return e(texto).replace("{idade}", f'<span data-nascimento="{NASC}">{ANO - NASC}</span>')
+
+
 N_VIDEOS = 1 + sum(len(g["videos"]) for g in D["video"]["grupos"])
 N_MATERIAS = len(D["impresso"]["materias"])
 N_AUDIOS = len(D["radio"]["playlist"]["faixas"])
@@ -283,7 +291,7 @@ def gerar_inicio():
     <div class="sobre-texto revela">
       <span class="rotulo">Sobre mim</span>
       <h2 class="titulo">Do rádio à TV, <em>do papel à web.</em></h2>
-      <p class="lead">{e(s["texto"])}</p>
+      <p class="lead">{com_idade(s["texto"])}</p>
       <dl class="fatos">
         <div><dt>2009</dt><dd>no jornalismo, desde a redação da Revista Viver Brasil</dd></div>
         <div><dt>2012</dt><dd>em Brasília, onde vive e trabalha</dd></div>
@@ -499,7 +507,7 @@ def gerar_curriculo():
   <div class="container">
     <div class="cv-abertura">
       <aside class="revela"><img src="assets/img/fotos/02-congresso-1600.jpg" alt="Thiago Soares em frente ao Congresso Nacional" loading="lazy"></aside>
-      <div class="revela"><span class="rotulo">Perfil</span><p class="lead" style="margin-top:20px">{e(cv["abertura"])}</p>{paras}</div>
+      <div class="revela"><span class="rotulo">Perfil</span><p class="lead" style="margin-top:20px">{com_idade(cv["abertura"])}</p>{paras}</div>
     </div>
     <div class="cv-titulo revela"><span class="rotulo">Trajetória</span><h2 class="titulo">Experiência <em>profissional</em></h2></div>
     <ol class="linha-tempo">{"".join(itens)}</ol>

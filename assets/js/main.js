@@ -12,6 +12,12 @@
     pausa: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>'
   };
 
+  /* ---------- idade (calculada pelo ano de nascimento) ---------- */
+  document.querySelectorAll("[data-nascimento]").forEach(function (el) {
+    var idade = new Date().getFullYear() - parseInt(el.getAttribute("data-nascimento"), 10);
+    if (idade > 0 && idade < 120) el.textContent = String(idade);
+  });
+
   /* ---------- cabeçalho ---------- */
   var topo = document.querySelector(".topo");
   function aoRolar() { if (topo) topo.classList.toggle("rolou", window.scrollY > 8); }

@@ -1,7 +1,7 @@
 {
   "_fonte": "https://5z6zc9wr4q.wixsite.com/jornthiagosoares",
   "_extraido_em": "2026-11-05",
-  "_obs": "Textos copiados exatamente como estão no site (inclusive '36 anos' e '© 2021', que podem estar desatualizados).",
+  "_obs": "Textos do site antigo. {idade} é trocado pela idade calculada a partir de site.nascimento (o JS do site atualiza o número a cada ano).",
   "site": {
     "titulo": "Thiago Soares Jornalista | brasília",
     "nome": "Thiago Soares",
@@ -38,7 +38,8 @@
         "rotulo": "Currículo e contato",
         "slug": "/currículo-e-contato"
       }
-    ]
+    ],
+    "nascimento": 1988
   },
   "contato": {
     "telefone": "(61) 98270-8730",
@@ -69,7 +70,7 @@
     },
     "sobre": {
       "titulo": "SOBRE MIM!",
-      "texto": "Jornalista, natural de Belo Horizonte (MG), 36 anos, residente em Brasília (DF) desde 2012. Tem experiência como editor de texto, produtor de TV, assessor de imprensa e repórter de impresso, TV e Rádio.",
+      "texto": "Jornalista, natural de Belo Horizonte (MG), {idade} anos, residente em Brasília (DF) desde 2012. Tem experiência como editor de texto, produtor de TV, assessor de imprensa e repórter de impresso, TV e Rádio.",
       "botao": {
         "rotulo": "Ver currículo",
         "link": "/currículo-e-contato"
@@ -375,7 +376,7 @@
     "titulo": "CURRÍCULO",
     "nome": "THIAGO SOARES",
     "assinatura": "•JORNALISTA•",
-    "abertura": "Jornalista, natural de Belo Horizonte (MG), tem 36 anos e reside em Brasília (DF) desde 2012. Formou-se pela Pontifícia Universidade Católica de Minas Gerais (PUC-Minas) em 2010.",
+    "abertura": "Jornalista, natural de Belo Horizonte (MG), tem {idade} anos e reside em Brasília (DF) desde 2012. Formou-se pela Pontifícia Universidade Católica de Minas Gerais (PUC-Minas) em 2010.",
     "paragrafos": [
       "Foi estagiário da Revista Viver Brasil, distribuída em Minas Gerais. Após a graduação, atuou como jornalista de campanha eleitoral ao governo do Estado de Minas Gerais. Logo depois, mudou-se para Unaí, município que fica no noroeste mineiro, onde foi responsável por levar ao ar diariamente o noticiário local da Rádio 98 FM. Também foi correspondente da Rádio Globo, afiliada na cidade.",
       "Em 2012, chegou a Brasília para trabalhar na Vincere Associados como editor do jornal Tribuna Rural e como repórter da revista Gestão Cooperativa e do Canal Cooperativo (web). Pela mesma empresa, ainda atuou como assessor de imprensa. Em 2013, entrou para o time do Correio Braziliense, no caderno de Cidades, onde permaneceu por quatro anos cobrindo assuntos locais relacionados às áreas de segurança pública, política, economia e comportamento. Foi colunista e repórter da Revista Pão de Queijo Notícias por sete anos.",
