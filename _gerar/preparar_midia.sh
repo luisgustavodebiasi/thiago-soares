@@ -28,8 +28,7 @@ for f in "$F"/trabalhos-0*.jpg; do
   web "$f" $A/img/fotos/$n-700.jpg 700 74
 done
 
-# imagem de compartilhamento (1200x630) a partir do hero
-ffmpeg -v error -y -i $A/img/fotos/hero-2400.jpg -vf "scale=1200:-2,crop=1200:630:0:(ih-630)*0.2" -q:v 4 $A/img/og.jpg
+# imagem de compartilhamento: é desenhada à parte, com zsh _gerar/og/gerar_og.sh
 
 # capas: tira as marcas de corte da gráfica (esq dir topo base, em fração da página)
 for f in "$X"/impresso/capas/*.jpg; do

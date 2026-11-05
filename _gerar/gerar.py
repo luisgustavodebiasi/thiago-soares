@@ -126,7 +126,13 @@ def pagina(arquivo, titulo, descricao, corpo, extra_head="", classe=""):
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="{e(t)}">
 <meta property="og:description" content="{e(descricao)}">
-<meta property="og:image" content="{BASE}assets/img/og.jpg">
+<meta property="og:site_name" content="Thiago Soares · Jornalista">
+<meta property="og:image" content="{BASE}assets/img/og-thiago-soares.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Thiago Soares, jornalista em Brasília, de terno, ao lado do nome e das áreas Vídeo, Impresso e Rádio">
+<meta name="twitter:image" content="{BASE}assets/img/og-thiago-soares.jpg">
 <meta property="og:url" content="{url}">
 <link rel="canonical" href="{url}">
 <meta name="twitter:card" content="summary_large_image">

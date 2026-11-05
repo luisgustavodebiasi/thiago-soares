@@ -27,6 +27,8 @@ Isso reescreve os `.html`. O visual fica em `assets/css/style.css` e as interaç
 
 Fotos, capas, áudios e PDFs saem da pasta `../extracao-wix`. Para gerar tudo de novo: `zsh _gerar/preparar_midia.sh`.
 
+A imagem que aparece quando o link é compartilhado (WhatsApp, LinkedIn) é `assets/img/og-thiago-soares.jpg`, desenhada em `_gerar/og/og.html`. Para gerar de novo: `zsh _gerar/og/gerar_og.sh`.
+
 Para ver no computador: `python3 -m http.server 8000` e depois abrir http://localhost:8000.
 
 ## Publicar no GitHub Pages
